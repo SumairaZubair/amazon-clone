@@ -1,0 +1,174 @@
+.boxes-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+}
+.item-head{
+    text-align: start;
+    margin-bottom: 10px;
+}
+.box {
+    background-color: #ffffff;
+    padding: 18px;
+    width: 312px;
+    height: 450px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .box-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    height: 275px;
+    justify-content: center;
+}
+
+.image-item {
+    /* Take about half of the available width */
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 10px; */
+/* } */ 
+.box-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 22px;
+    height: auto;
+    justify-content: center;
+}
+
+.image-item {
+    flex-basis: calc(50% - 22px); /* Each image takes up about half of the available width */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+.image-item img {
+    width: 125px;
+    height: 100px;
+    background-size: cover;
+    object-fit: cover;
+}
+.large-image img{
+    padding: 18px;
+    width: 312px;
+   height:  330px;
+}
+
+.image-item p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #333;
+    text-align: start;
+}
+.para-div{
+    
+}
+.box-para{
+    text-align: start;
+    margin-top: 20px;
+    position: absolute;
+    top: 87%;
+    color: #007180;
+    cursor: pointer;
+}
+
+.slider-container {
+    width: 1308px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(254, 255, 255);
+}
+
+.slider-item {
+    width: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-image {
+    padding-top: 10px;
+    height: auto;
+    background-size: cover;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Customize dots */
+.slick-dots li button:before {
+    font-size: 10px;
+    color: gray;
+}
+.slick-dots li.slick-active button:before {
+    color: black; /* Active dot color */
+}
+
+/* Customize arrows */
+.slick-prev:before, .slick-next:before {
+    color: black; /* Change arrow color */
+}
+.slick-slide{
+    width:  310px !important;
+}
+.slider-image-books{
+    width: 200px;
+    background-size: cover;
+}
+
+
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%; /* Make box full width on mobile */
+        height: auto; /* Adjust height as needed */
+    }
+
+    .boxes-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+   
+    
+    .image-item img {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    .slider-container {
+        display: none;
+        width: 100%; /* Make slider full width on mobile */
+        padding: 10px;
+    }
+
+    .slider-item {
+        width: 90%; /* Adjust slider item width */
+    }
+
+   
+
+    .large-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-para {
+        position: static; /* Remove absolute positioning on mobile */
+        margin-top: 10px;
+    }
+}
+
+

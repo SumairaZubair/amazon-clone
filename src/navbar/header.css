@@ -1,0 +1,206 @@
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 4px;
+}
+
+.navbar-logo {
+    height: 50px;
+    width: 120px;
+    border: 1.3px solid transparent;
+    padding: 2px; /* Set padding here */
+}
+
+.logo {
+    background-image: url("../../public/images/amazon_logo.png");
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+}
+
+.navbar-logo:hover {
+    border: 1.3px solid white;
+    cursor: pointer;
+}
+.add-icon{
+    width: 100px;
+    display: block;
+    padding: 3px;
+
+}
+.add-icon:hover{
+    border: 1.3px solid white;
+    cursor: pointer;
+    padding: 2px;
+}
+.add-para{
+    margin-left: 17px;
+    font-size: 12px;
+    color: #cccccc;
+}
+.add-para-name{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 1px;
+}
+/* AmazonSearchBar.css */
+.search{
+    padding-left: 10px;
+}
+.search-bar {
+    display: flex !important;
+    width: 700px; /* Set the overall width for larger screens */
+  }
+  
+  .select {
+    min-width: 80px; /* Sets a minimum width for the select */
+  }
+  
+  .input {
+    width: 350px; /* Set width for the input field */
+  }
+  
+  .button {
+    background-color: #febd69;
+    border-color: #febd69;
+  }
+  
+
+  .shopping-cart {
+    width: 80px;
+    /* margin-left: 10px; */
+    padding: 2px;
+    border: 1.3px solid transparent;
+    position: relative; /* Positioning for badge */
+  }
+  
+  .cart-icon {
+   
+    font-size: 40px; /* Size of the cart icon */
+    color: #f0f0ec; /* Amazon's yellow color */
+  }
+ 
+  
+  .cart-span{
+    font-size: 15px;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .shopping-cart:hover {
+    border: 1.3px solid white;
+    cursor: pointer;
+  }
+  
+.sign-in{ 
+width: 120px;
+ /* margin-left: 10px; */
+ padding: 2px;
+ border: 1.3px solid transparent;
+ 
+}
+.sign-in:hover{
+    border: 1.3px solid white;
+    cursor: pointer;
+}
+.sign-in-p{
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.sign-in-para{
+    font-size: 15px;
+    font-weight: bold;
+}
+.return{
+    width: 100px;
+    /* margin-left: 10px; */
+    padding: 4px;
+    border:  1.3px solid transparent;
+}
+.return:hover{
+    border: 1.3px solid white;
+    cursor: pointer;
+}
+.return-p{
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.return-para{
+    font-size: 15px;
+    font-weight: bold;
+}
+.to-do{
+    width: 100%;
+    height: 40px;
+    padding: 0px 18px;
+    color: white;
+        display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scroll */
+    white-space: nowrap;
+    justify-content: flex-start;
+    background-color: #1f2933;
+}
+.text{
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.list{
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+}
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .search-bar {
+        height: 32px;
+      flex-direction: row; /* Stack elements vertically on small screens */
+      width: 100%; /* Make the search bar full width */
+    }
+    
+     .input, .button {
+        height: 32px;
+      width: 100%; /* Make all elements full width */
+      margin-bottom: 10px; /* Add space between elements */
+    }
+    .select{
+        min-width: 70px;
+    }
+  
+    .button {
+      margin-bottom: 0; /* Remove margin for the last button */
+    }
+    .add-icon{
+        display: none;
+    }
+    .language-selector{
+        display: none;
+    }
+    .sign-in{
+        display: none;
+    }
+    .return{
+        display: none;
+    }
+    .cart-span{
+        display: none;
+    }
+    .cart-icon{
+        font-size: 35px;
+    }
+  }
+  

@@ -1,0 +1,64 @@
+.hero-image {
+    position: relative; /* Position relative for proper positioning of children */
+    width: 100%; /* Full width */
+    height: auto; /* Set the desired height */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    background: linear-gradient(rgba(229, 236, 234, 0.7), rgba(229, 236, 234, 0.7)); /* Optional: Add shadow for depth */
+}
+
+.hero-image img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensure images cover the entire area */
+    object-position: center; /* Center the images */
+    transition: transform 0.5s ease; /* Smooth zoom effect */
+}
+
+
+/* Optional: Adding a zoom effect on hover */
+.hero-image:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Optional: Add a caption for each image */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom of the image */
+    left: 20px; /* Margin from the left */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 15px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners for the caption */
+    font-size: 16px; /* Font size */
+}
+
+.main{
+    width: 100%;
+    position: relative;
+   
+}
+.boxes-div{
+    position: absolute;
+    top: 55%;
+    
+    
+}
+.padding-div{
+    padding: 20px;
+}
+
+/* Optional: Add a responsive design */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 400px;
+        background-size: cover; /* Adjust height for mobile */
+    }
+
+    .carousel-caption {
+        font-size: 14px; /* Adjust caption font size for mobile */
+        bottom: 10px; /* Adjust bottom margin for mobile */
+        left: 10px; /* Adjust left margin for mobile */
+    }
+}

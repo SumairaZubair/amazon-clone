@@ -1,0 +1,186 @@
+.footer-border {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px 0px;
+}
+.inner-div {
+  padding: 0px 20px;
+  border: 1.5px solid rgb(214, 214, 214);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.sign-in-button {
+  width: 200px;
+  height: 32px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffc633;
+  /* text-shadow:0 1px 0 #ffe093; */
+  border-color: #ffc633;
+  /* color: var(--N4QdChsbGN6j, #ffc633);; */
+}
+.new-cst {
+  font-family: 12px;
+}
+.start-here {
+  cursor: pointer;
+  color: #ffc633;
+}
+.back-to-top {
+  background-color: #37475a;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+.get-to-know {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  background-color: #232f3e;
+  gap: 40px;
+  text-align: start;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #888888;
+}
+
+.know-head{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.know-para ul{
+    list-style: none;
+    padding: 0px;
+    
+}
+.know-para{
+    padding-top: 10px;
+    color:#dee0de ;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 1.6;
+}
+.know-para li:hover{
+   cursor: pointer;
+   border-bottom: 1px solid rgb(228, 224, 224);
+}
+
+.footer-logo{
+    background-image: url("../../public/images/amazon_logo.png");
+    width: 120px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 50px;
+}
+
+.last-footer{
+    background-color: #232f3e;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.world-wide{
+  width: 100px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  /* justify-content: space-around; */
+  align-items: center;
+  border: 1px solid rgb(230, 230, 230);
+  color: whitesmoke;
+}
+
+.dollar-usd{
+  width: 135px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  /* justify-content: space-around; */
+  align-items: center;
+  border: 1px solid rgb(230, 230, 230);
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.flag-select{
+  width: 150px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  /* justify-content: space-around; */
+  align-items: center;
+  border: 1px solid rgb(230, 230, 230);
+  color: whitesmoke;
+  font-size: 14px;
+  background-size: cover;
+}
+
+.img-flag{
+  width: 30px;
+  height: 20px;
+}
+.last-footer-link {
+  background-color: #131a22;
+  padding: 40px 70px;
+  
+}
+.nav_a{
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav_a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.navFooterDescText{
+  color: #888888;
+  font-size: 13px;
+  font-weight: 400;
+
+}
+.navFooterDescItem {
+  padding-bottom: 10px; /* Adjust the value as per your need */
+}
+
+@media (max-width: 768px) {
+  .inner-div {
+    padding: 15px 10px; /* Reduce padding */
+    border: none; /* Remove border to make it cleaner */
+  }
+
+  .sign-in-button {
+    /* Full width on smaller screens */
+    font-size: 14px; /* Slightly smaller font */
+    height: 36px; /* Adjust height */
+  }
+
+  .footer-border {
+    padding: 20px 0; /* Reduce top-bottom padding */
+  }
+
+  .back-to-top {
+    padding: 10px; /* Reduce padding */
+    font-size: 14px; /* Smaller font size */
+  }
+}

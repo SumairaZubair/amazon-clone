@@ -1,0 +1,49 @@
+
+.language-selector .ant-select {
+    width: 100px; 
+    padding-left: 10px;
+    /* Set the width of the select */
+}
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    width: 90%;
+    height: 100%;
+    margin-left: 10px;
+    
+}
+.language-selector .ant-select-selector {
+    background-color: transparent !important; /* Ensure background stays transparent */
+    color: white; 
+    font-weight: bold;
+    /* Text color */
+    border: none ; /* Remove any default border */
+}
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid transparent;
+    border-radius: 0;
+    background: #ffffff;
+}
+:where(.css-dev-only-do-not-override-1hpnbz2).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+    border-color: #fcfeff;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle; /* Align icon properly */
+}
+
+.flag-emoji {
+    margin-right: 8px;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle; /* Align icon properly */
+}
+
+.flag-emoji {
+    margin-right: 8px;
+}
