@@ -44,9 +44,9 @@ const MyComponent = () => {
      <Boxes/>
 </div>
     
-    {/* <div className="footer-div">
+    <div className="footer-div">
     <FooterSection back={goToHome}/>
-    </div> */}
+    </div>
 
       </div>
     </div>
