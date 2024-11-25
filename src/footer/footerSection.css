@@ -42,17 +42,16 @@
   cursor: pointer;
 }
 .get-to-know {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
   justify-content: space-evenly;
-  /* align-items: center; */
   background-color: #232f3e;
-  gap: 40px;
-  text-align: start;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  gap: 20px; /* Adjust gap between items */
+  text-align: center; /* Center-align text */
+  padding: 20px 10px;
   border-bottom: 1px solid #888888;
 }
-
 .know-head{
     font-size: 16px;
     color: #ffffff;
@@ -70,10 +69,10 @@
     font-weight: 500px;
     line-height: 1.6;
 }
-.know-para li:hover{
+/* .know-para li:hover{
    cursor: pointer;
    border-bottom: 1px solid rgb(228, 224, 224);
-}
+} */
 
 .footer-logo{
     background-image: url("../../public/images/amazon_logo.png");
@@ -82,7 +81,16 @@
     background-size: cover;
     margin-right: 50px;
 }
-
+.conditions{
+  background-color: #131a22;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+}
+.conditions:hover{
+  text-decoration: underline;
+}
 .last-footer{
     background-color: #232f3e;
     padding: 30px;
@@ -168,7 +176,9 @@
     padding: 15px 10px; /* Reduce padding */
     border: none; /* Remove border to make it cleaner */
   }
-
+  .inner-div-h2{
+    font-size: 19px;
+  }
   .sign-in-button {
     /* Full width on smaller screens */
     font-size: 14px; /* Slightly smaller font */
@@ -182,5 +192,42 @@
   .back-to-top {
     padding: 10px; /* Reduce padding */
     font-size: 14px; /* Smaller font size */
+  }
+  .footer-logo{
+    display: none;
+    background-image: url("../../public/images/amazon_logo.png");
+    width: 120px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 50px;
+}
+
+  .last-footer{
+    background-color: #232f3e;
+    padding: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.last-footer-link{
+  display: none;
+}
+  
+}
+@media screen and (max-width: 768px) {
+  .get-to-know {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    gap: 10px; /* Reduce gap for mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .get-to-know {
+    width: 100%;
+    grid-template-columns: 1fr; /* Single column on very small screens */
   }
 }

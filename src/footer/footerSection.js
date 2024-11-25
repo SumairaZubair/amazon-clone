@@ -214,7 +214,7 @@ const FooterSection = ({ back }) => {
       <div className="footer-border">
         <div className="inner-div">
           {/* <div className='personalization'> */}
-          <h2>See personalized recommendations</h2>
+          <h2 className="inner-div-h2">See personalized recommendations</h2>
           <button className="sign-in-button">Sign in</button>
           <p className="new-cst">
             New customer? <span className="start-here">Start here</span>
@@ -251,7 +251,7 @@ const FooterSection = ({ back }) => {
           </div>
         </div>
         <div className="last-footer-link">
-      <div className="navFooterLine navFooterLinkLine navFooterDescLine" role="navigation" aria-label="More on Amazon">
+      <div className="navFooterLine navFooterLinkLine navFooterDescLine " role="navigation" aria-label="More on Amazon">
         <table className="navFooterMoreOnAmazon" cellSpacing="0" summary="More on Amazon">
           <tbody>
             {chunkedLinks.map((row, rowIndex) => (
@@ -274,6 +274,17 @@ const FooterSection = ({ back }) => {
         </table>
       </div>
     </div>
+    <div className="conditions">
+       <p>
+       Conditions of Use
+Privacy Notice
+Consumer Health Data Privacy Disclosure
+Your Ads Privacy Choices
+       </p>
+
+© 1996-2024, Amazon.com, Inc. or its affiliates
+    </div>
+    
     <div>
       
     </div>
