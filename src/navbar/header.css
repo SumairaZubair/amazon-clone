@@ -177,8 +177,14 @@ width: 120px;
       width: 100%; /* Make all elements full width */
       margin-bottom: 10px; /* Add space between elements */
     }
+    .navbar-logo {
+        height: 50px;
+        width: 100%;
+        border: 1.3px solid transparent;
+        padding: 2px; /* Set padding here */
+    }
     .logo {
-        width: 90%;
+        width: 100%;
         height: 50px;
         background-size: cover;
     }
